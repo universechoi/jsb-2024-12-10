@@ -6,21 +6,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class MainController {
-    @GetMapping("/")
+    @GetMapping("/sbb")
     @ResponseBody
-    public int home() {
-        System.out.println("home");
-        return 22;
-    }
-
-    @GetMapping("/about")
-    @ResponseBody
-    public String about() {
-        System.out.println("about");
-        return "안녕하세요.";
-    }
-
-    public void contact() {
-        System.out.println("contact");
+    public String index() {
+        System.out.println("index");
+        return "안녕하세요 sbb에 오신 것을 환영합니다.";
     }
 }

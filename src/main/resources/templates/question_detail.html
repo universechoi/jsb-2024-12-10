@@ -1,2 +1,5 @@
-<h1>제목</h1>
-<div>내용</div>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+<h1 th:text="${question.subject}"></h1>
+<div th:text="${question.content}"></div>

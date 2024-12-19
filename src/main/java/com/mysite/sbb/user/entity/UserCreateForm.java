@@ -3,7 +3,11 @@ package com.mysite.sbb.user.entity;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 public class UserCreateForm {
     @Size(min = 3, max = 25)
     @NotEmpty(message = "사용자 ID는 필수 항목입니다.")
